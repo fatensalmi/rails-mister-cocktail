@@ -1,9 +1,16 @@
-<h1>Cocktails !</h1>
 
-<ul>
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Cocktails !</span>
+</nav>
+
+<div class="card">
 <% @cocktails.each do |cocktail| %>
- <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  <div class="card-body border-bottom"><%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %></li>
+  </div>
 <% end %>
-</ul>
+</div>
 
-<%= link_to "Create a new cocktail", new_cocktail_path %>
+<button type="button" class="btn btn-warning">
+  <%= link_to "Create a new cocktail", new_cocktail_path %>
+</button>
+

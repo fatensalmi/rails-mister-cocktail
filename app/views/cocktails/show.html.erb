@@ -6,6 +6,7 @@
 
 <div class="container">
   <div class="row">
+    <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
     <% @cocktail.doses.each do |dose| %>
     <div class= "col-4">
       <%= dose.ingredient.name.capitalize %> : <%= dose.description %> -

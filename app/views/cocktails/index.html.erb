@@ -1,16 +1,22 @@
 
-<nav class="navbar navbar-light bg-light">
+<!-- <nav class="navbar navbar-light bg-light">
   <span class="navbar-brand mb-0 h1">Cocktails !</span>
-</nav>
+</nav> -->
 
-<div class="card">
-<% @cocktails.each do |cocktail| %>
-  <div class="card-body border-bottom"><%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %></li>
+<div class="index-cocktail">
+  <h1>Mister Cocktail</h1>
+  <%= cl_image_tag("j8nu1ybuxruyzq8etycf",
+        width: 600, height: 300, crop: :fit) %>
+  <div class="card">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-body border-bottom"><%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %></li>
+      </div>
+    <% end %>
   </div>
-<% end %>
-</div>
 
-<button type="button" class="btn btn-warning">
-  <%= link_to "Create a new cocktail", new_cocktail_path %>
-</button>
+  <button class="btn-flat">
+    <%= link_to "Create a new cocktail", new_cocktail_path, class: "btn-flat" %>
+  </button>
+
+</div>
 

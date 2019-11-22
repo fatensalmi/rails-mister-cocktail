@@ -17,10 +17,28 @@ ul {
   text-decoration: none;
 }
 
+
+body {
+  font-family: 'Bree Serif', serif;
+}
+
 body .container .header {
   height: 100px;
   font-weight: bold;
-  color : black;
   background-image: url("../../../images/cocktail.png");
   background-position: cover;
+  font-family: 'Bree Serif', serif;
 }
+
+.bloc {
+  margin : 30px auto;
+  width : 600px;
+}
+// .btn-flat {
+//   color: white;
+//   padding: 8px 24px;
+//   border-radius: 4px;
+//   background: #d1245d;
+//   transition: background 0.3s ease;
+//   margin: 20px;
+// }

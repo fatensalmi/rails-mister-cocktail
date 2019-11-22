@@ -1,10 +1,46 @@
 // Place all the styles related to the Cocktail controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.navbar-brand {
-  font-size: 20px;
-}
 
 ul {
   text-decoration: none;
+}
+
+.btn-flat {
+  padding: 8px 15px;
+  border-radius: 10px;
+  background: #d1245d;
+  transition: background 0.3s ease;
+  margin: 20px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.btn-flat :hover {
+  padding: 8px 15px;
+  border-radius: 10px;
+  background: #d1245d;
+  transition: background 0.3s ease;
+  margin: 20px;
+  font-weight: bold;
+  color: #CFD0D3 !important;
+  text-decoration : none;
+}
+
+
+.index-cocktail {
+  display : flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  h1 {
+  font-family : 'Bree Serif', serif;
+  text-align: center;
+  }
+
+}
+
+.card :hover {
+  text-decoration: none;
+  color: #CFD0D3;
 }
